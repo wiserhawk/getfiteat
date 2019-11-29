@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: common-api-gateway
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: manoj.kumar2
+Implementation-Vendor-Id: com.indhawk.api.gateway
+Build-Jdk: 1.8.0_102
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/hungersol/common-api-gateway
+Created-By: Maven Integration for Eclipse
+
