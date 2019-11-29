@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.indhawk</groupId>
+	<artifactId>hungersol</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>unique-sequence-number-generator</module>
+		<module>foods-core</module>
+		<module>common-api-gateway</module>
+		<module>billing-core</module>
+		<module>authentication-core</module>
+		<module>payment-core</module>
+		<module>order-core</module>
+		<module>vendor-allocator-core</module>
+		<module>vendor-management-core</module>
+		<module>location-service-core</module>
+		<module>notification-core</module>
+		<module>user-management-core</module>
+		<module>getfiteat-main</module>
+	</modules>
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<io.springfox.springfox-swagger2.version>2.7.0</io.springfox.springfox-swagger2.version>
+		<slf4j-api-version>1.7.25</slf4j-api-version>
+	</properties>
+
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.2.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<dependencies>
+
+		<!-- Swagger Spring -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${io.springfox.springfox-swagger2.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.reflections</groupId>
+					<artifactId>reflections</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- Swagger UI -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${io.springfox.springfox-swagger2.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-api-version}</version>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
